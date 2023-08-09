@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <title>Mesto Russia</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="images/logo_header.svg"
+        alt="логотип сайта"
+      />
+    </header>
+
+    <main class="content">
+      <section class="profile">
+        <img
+          class="profile__image"
+          src="./images/avatar_image.jpg"
+          alt="фото профиля"
+        />
+        <div class="profile__info">
+          <div class="profile__name">
+            <h1 class="profile__name-title">Квентин Тарантино</h1>
+            <button
+              class="profile__button-edit js-profile__button-edit"
+              aria-label="Редактировать"
+              type="button"
+            ></button>
+          </div>
+          <p class="profile__name-description">Американский кинорежиссёр</p>
+        </div>
+        <button
+          aria-label="Добавить"
+          type="button"
+          class="profile__button-add"
+        ></button>
+      </section>
+
+      <section class="elements">
+        <div class="element">
+          <img
+            class="element__image"
+            src="./images/Vladivostok.jpg"
+            alt="Вид на мост во Владивостоке"
+          />
+          <div class="element__caption">
+            <h2 class="element__title">Владивосток</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/elbrus.jpg" alt="Эльбрус" class="element__image" />
+          <div class="element__caption">
+            <h2 class="element__title">Гора Эльбрус</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/Kaliningrad.jpg"
+            alt="Кафедральный собор в Калининграде"
+            class="element__image"
+          />
+          <div class="element__caption">
+            <h2 class="element__title">Калининград</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/Moscow.jpg"
+            alt="Вид на собор в Москве"
+            class="element__image"
+          />
+          <div class="element__caption">
+            <h2 class="element__title">Москва</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./images/dombay.jpg" alt="Домбай" class="element__image" />
+          <div class="element__caption">
+            <h2 class="element__title">Домбай</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+        <div class="element">
+          <img
+            src="./images/Piter.jpg"
+            alt="вид на собор вСанкт-Петербурге"
+            class="element__image"
+          />
+          <div class="element__caption">
+            <h2 class="element__title">Санкт-Петербург</h2>
+            <button
+              aria-label="Понравилось"
+              type="button"
+              class="element__button-like js-element__button"
+            ></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copy">&copy; 2023 Mesto Russia</p>
+    </footer>
+
+    <div class="popup js-popup">
+      <div class="popup__container">
+        <button
+          class="popup__button-close js-popup__button-close"
+          type="button"
+          aria-label="Закрыть"
+        ></button>
+        <form class="form">
+          <h2 class="form__title">Редактировать профиль</h2>
+          <input
+            class="form__input"
+            type="text"
+            name="name-input"
+            id="name-input"
+            value="Квентин Тарантино"
+          />
+          <input
+            class="form__input"
+            type="text"
+            name="description-input"
+            id="description-input"
+            value="Американский кинорежиссёр"
+          />
+
+          <button class="form__button-submit" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>

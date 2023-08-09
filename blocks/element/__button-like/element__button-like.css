@@ -1,0 +1,19 @@
+.element__button-like {
+  background-image: url("../../../images/like.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  width: 22px;
+  height: 19px;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.element__button-like:active {
+  transform: scale(1.2);
+}
+
+.element__button-like_liked {
+  background-image: url("../../../images/like_black.svg");
+}
