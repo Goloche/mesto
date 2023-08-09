@@ -1,5 +1,5 @@
 /*like*/
-const buttons = document.querySelectorAll(".js_element__button");
+const buttons = document.querySelectorAll(".js-element__button");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -7,9 +7,9 @@ buttons.forEach((button) => {
   });
 });
 
-const profileEditButton = document.querySelector(".js_profile__button-edit");
-const popup = document.querySelector(".js_popup");
-const popupClosed = document.querySelector(".js_popup__button-close");
+const profileEditButton = document.querySelector(".js-profile__button-edit");
+const popup = document.querySelector(".js-popup");
+const popupClosed = document.querySelector(".js-popup__button-close");
 
 profileEditButton.addEventListener("click", () => {
   popup.classList.add("popup_opened");
