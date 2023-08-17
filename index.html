@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="ru">
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
-    <title>Mesto Russia</title>
+    <meta name="description" content="Страница о местах в России" />
+    <meta name="author" content="Андрей Головачев" />
+    <meta name="keywords" content="HTML5, CSS" />
+
+    <title lang="en">Mesto Russia</title>
   </head>
 
   <body class="page">
@@ -131,7 +135,7 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__copy">&copy; 2023 Mesto Russia</p>
+      <p lang="en" class="footer__copy">&copy; 2023 Mesto Russia</p>
     </footer>
 
     <div class="popup">
@@ -141,23 +145,22 @@
           type="button"
           aria-label="Закрыть"
         ></button>
-        <form class="form">
-          <h2 class="form__title">Редактировать профиль</h2>
+        <h2 class="form__title">Редактировать профиль</h2>
+        <form class="form" name="profile-edit">
           <input
-            class="form__input"
+            class="form__input form__input_name"
             type="text"
             name="name-input"
             id="name-input"
-            value="Квентин Тарантино"
+            value=""
           />
           <input
-            class="form__input"
+            class="form__input form__input_description"
             type="text"
             name="description-input"
             id="description-input"
-            value="Американский кинорежиссёр"
+            value=""
           />
-
           <button class="form__button-submit" type="submit">Сохранить</button>
         </form>
       </div>

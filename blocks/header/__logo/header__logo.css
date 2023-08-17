@@ -4,6 +4,7 @@
   object-position: center;
   padding: 45px 0 41px;
   width: 142px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 900px) {

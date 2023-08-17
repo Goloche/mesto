@@ -1,10 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
   width: 100%;
-  width: 430px;
-  height: 330px;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {

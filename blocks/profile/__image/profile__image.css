@@ -1,8 +1,8 @@
 .profile__image {
-    margin: 0;
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    object-fit: contain;
-    object-position: center;
-  }
+  margin: 0;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  object-position: center;
+}

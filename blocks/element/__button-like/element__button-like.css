@@ -3,17 +3,17 @@
   background-repeat: no-repeat;
   display: block;
   background-position: center;
+  background-size: cover;
   width: 22px;
   height: 19px;
   border: none;
   background-color: unset;
   cursor: pointer;
+  transition: opacity 0.8s;
 }
 
-.element__button-like:active {
+.element__button-like:hover {
   transform: scale(1.2);
-}
-
-.element__button-like_liked {
-  background-image: url("../../../images/like_black.svg");
+  opacity: 0.5;
+  transition: opacity 0.8s;
 }
