@@ -12,16 +12,17 @@ const popup = document.querySelector(".popup");
 const popupClosed = document.querySelector(".popup__button-close");
 
 const formElement = document.querySelector(".form");
-const nameInput = formElement.querySelector(".form__input_name");
-const descriptionInput = formElement.querySelector(".form__input_description");
+const nameInput = formElement.querySelector(".form__input_type_name");
+const descriptionInput = formElement.querySelector(
+  ".form__input_type_description"
+);
 
 const profileName = document.querySelector(".profile__name-title");
 const profileDescription = document.querySelector(".profile__name-description");
 
-nameInput.value = profileName.textContent;
-descriptionInput.value = profileDescription.textContent;
-
 function openPopup() {
+  nameInput.value = profileName.textContent;
+  descriptionInput.value = profileDescription.textContent;
   popup.classList.add("popup_opened");
 }
 
@@ -34,9 +35,6 @@ function handleFormSubmit(evt) {
 
   profileName.textContent = nameInput.value;
   profileDescription.textContent = descriptionInput.value;
-
-  nameInput.value = profileName.textContent;
-  descriptionInput.value = profileDescription.textContent;
 
   closePopup();
 }
